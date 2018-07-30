@@ -25,14 +25,15 @@ def reporthook(count, block_size, total_size):
     
 
 def save(url):    
-    random = randint(0, 9)
+    random = randint(0, 1)
     filename = str(random)+".jpg"
     urllib.request.urlretrieve(url, filename, reporthook)
     print("\nfinito")
     set_desktop_background(filename)
-    for i in range(0,10):
-        if os.path.isfile(str(i)+".jpg") and i!=random:
-            os.remove(str(i)+".jpg")
+    for i in range(0,2):
+       if os.path.isfile(str(i)+".jpg") and i != random:
+           os.remove(str(i)+".jpg")
+    set_desktop_background(filename)
 
 #import os
 #os.remove("image.jpg")
