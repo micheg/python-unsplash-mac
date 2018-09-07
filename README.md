@@ -20,6 +20,8 @@ python main.py
 ```
 
 #Contribute
-TODO:
+It's open
+
+#TODO:
 * This script change all desktop opened , but if you have some desktop closed it doesn't change 
 * Sometimes doesn't work , the issue it's with appscript module
