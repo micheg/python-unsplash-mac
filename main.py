@@ -40,7 +40,6 @@ def save(url):
            os.remove(str(i)+".jpg")
     set_desktop_background(filename)
 
-#import os
-#os.remove("image.jpg")
+
 save("https://source.unsplash.com/random",)
 
