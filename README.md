@@ -19,6 +19,11 @@ python setup.py
 python main.py
 ```
 
+#Alias
+``` 
+alias unsplash="python ~/Desktop/unsplash-python/main.py"
+```
+
 # Contribute
 It's open
 
