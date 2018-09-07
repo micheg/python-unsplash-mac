@@ -8,7 +8,12 @@ import os
 
 
 def set_desktop_background(file):
-    app('Finder').desktop_picture.set(mactypes.File(file))
+    se = app('System Events')
+    desktops = se.desktops.display_name.get()
+    #app('Finder').desktop_picture.set(mactypes.File(file))
+    for d in desktops:    
+        desk = se.desktops[d]    
+        desk.picture.set(mactypes.File(file))
 
 def reporthook(count, block_size, total_size):
     global start_time
