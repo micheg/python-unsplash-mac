@@ -33,7 +33,7 @@ def save(url):
     random = randint(0, 1)
     filename = str(random)+".jpg"
     urllib.request.urlretrieve(url, filename, reporthook)
-    print("\nfinito")
+    print("\ndone")
     set_desktop_background(filename)
     for i in range(0,2):
        if os.path.isfile(str(i)+".jpg") and i != random:
